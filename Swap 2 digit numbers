@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+  if(a>9)
+     { while(a>100)
+          {
+            a=a/10;
+         }
+   int digit1=a%10;
+    int digit2=a/10;
+      printf("%d%d",digit1,digit2);
+     }
+  else
+      printf("STDOUT");
+           
+    return 0;
+}
