@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int basicSalary;
+    scanf("%d", &basicSalary);
+    double hra, da, grossSalary;
+    if (basicSalary < 15000)
+      {
+        hra = 0.15 * basicSalary;
+        da = 0.90 * basicSalary;
+      }
+    else
+       {
+        hra = 5000.0;
+        da = 0.98 * basicSalary;
+       }
+    grossSalary = basicSalary + hra + da;
+    printf("%.2lf\n", grossSalary);
+    return 0;
+}
