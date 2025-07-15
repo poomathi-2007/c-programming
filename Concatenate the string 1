@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char arr[50];
+    char arr2[50];
+    scanf("%s",arr);
+    scanf("\n%[^\n]s",arr2);
+    printf("%s",strcat(arr,arr2));
+}
