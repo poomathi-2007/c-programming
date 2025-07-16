@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int sumDigits(int n) {
+    if (n == 0) 
+    { 
+        return 0;
+    } else
+    { 
+        return (n % 10) + sumDigits(n / 10);
+    }
+}
+
+int main() {
+    int num; 
+    int sum;
+    scanf("%d", &num);
+    if (num >= 1000) {
+        printf("Enter a Valid Input!!!!!!!\n");
+    } else {
+        sum = sumDigits(num); 
+        printf("Sum of Digit:%04d\n", sum); 
+    }
+
+    return 0;
+}
